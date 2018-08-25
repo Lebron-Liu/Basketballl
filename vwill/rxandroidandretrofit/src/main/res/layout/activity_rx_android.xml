@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_rx_android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.xykj.rxandroidandretrofit.RxAndroidActivity">
+    <Button
+            android:id="@+id/btn_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"/>
+    <Button
+            android:id="@+id/btn_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"/>
+    <Button
+            android:id="@+id/btn_just"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just"/>
+    <Button
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"/>
+    <Button
+            android:id="@+id/btn_flatmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FlatMap"/>
+    <Button
+            android:id="@+id/btn_merge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merge"/>
+    <Button
+            android:id="@+id/btn_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线程控制(重点)"/>
+
+    <ImageView android:id="@+id/iv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+</LinearLayout>

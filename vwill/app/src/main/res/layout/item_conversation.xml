@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/icon_usr_def"
+        app:civ_border_color="@color/icon_border_color"
+        app:civ_border_width="2dp"
+        app:civ_fill_color="@android:color/white" />
+
+    <TextView
+        android:id="@+id/item_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/item_icon"
+        android:text="ABC"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_last_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_nick"
+        android:layout_alignBottom="@id/item_icon"
+        android:text="ABC"
+        android:textColor="#ff999999" />
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="10:00"
+        android:textColor="#ff666666" />
+
+    <TextView
+        android:id="@+id/item_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/item_icon"
+        android:text="99+"
+        android:visibility="gone"
+        android:background="@drawable/unread_bg"
+        android:textColor="#ffffff" />
+</RelativeLayout>

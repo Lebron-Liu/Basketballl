@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Home</string>
+    <string name="found">Found</string>
+    <string name="msg">Msg</string>
+    <string name="choose">Selection</string>
+    <string name="attention">Attention</string>
+    <string-array name="article_types_title">
+        <item>Article</item>
+        <item>Images</item>
+        <item>Video</item>
+        <item>Music</item>
+    </string-array>
+    <string name="order">实时订单</string>
+    <string name="collect">个人收藏</string>
+    <string name="usr_msg">用户消息</string>
+    <string name="active_publish">发布活动</string>
+    <string name="active_usr_join">加入的活动</string>
+    <string name="settings">设置</string>
+    <string name="logout">注销用户</string>
+    <string name="hint_login_name">用户名/账号</string>
+    <string name="hint_regist_name">昵称</string>
+    <string name="hint_psw">密码</string>
+    <string name="hint_re_psw">确认密码</string>
+    <string name="hint_sign">个性签名</string>
+    <string name="login">登录</string>
+    <string name="login_by_msg">短信验证</string>
+    <string name="login_by_wx">微信</string>
+    <string name="login_by_qq">QQ</string>
+    <string name="login_by_wb">微博</string>
+    <string name="regist">注册</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="tag_select">标签选择</string>
+    <string name="image">图像</string>
+    <string name="video">视频</string>
+    <string name="audio">音乐</string>
+    <string name="hint_title">请输入标题</string>
+    <string name="hint_content">请输入内容</string>
+
+    <string name="group">群组</string>
+    <string name="black_list">黑名单</string>
+</resources>

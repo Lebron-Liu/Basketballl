@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageShowActivity">
+    <com.xykj.widget.XViewPager
+        android:id="@+id/m_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.xykj.widget.XViewPager>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#88333333"
+        android:textColor="#ffffffff"
+        android:text="1/3"
+        android:padding="5dp"/>
+
+</merge>

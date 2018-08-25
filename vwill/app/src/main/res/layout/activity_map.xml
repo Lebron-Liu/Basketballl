@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#88ffffff"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingRight="80dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/et_name"
+        android:gravity="center"
+        android:text="搜索"
+        android:textColor="#88333333" />
+
+    <Button
+        android:id="@+id/change_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_name"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dip" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/change_mode"
+        android:layout_below="@id/change_mode"
+        android:layout_marginTop="5dip"
+        android:text="重置" />
+
+    <ListView
+        android:id="@+id/list_poi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="5dp"
+        android:background="#ffffffff"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="5dp"
+        android:divider="#00000000"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_near_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ff333333"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/item_icon"
+        android:text="接朋友"
+        android:layout_marginLeft="5dp"/>
+
+
+    <TextView
+        android:id="@+id/item_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff666666"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/item_icon"
+        android:textSize="16sp"
+        android:text="你来的陌生之地，有我等候"
+        android:layout_alignBottom="@id/item_icon"
+        android:layout_marginLeft="5dp"/>
+
+
+</RelativeLayout>

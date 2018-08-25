@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_in_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_usr_def"
+        app:civ_border_color="@color/icon_border_color"
+        app:civ_border_width="2dp"
+        app:civ_fill_color="@android:color/white" />
+
+    <TextView
+        android:id="@+id/item_in_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/item_in_icon"
+        android:text="abc"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/item_in_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_in_nick"
+        android:layout_below="@id/item_in_nick"
+        android:background="@drawable/msg_in_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_in_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/item_in_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_out_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_usr_def"
+        app:civ_border_color="@color/icon_border_color"
+        app:civ_border_width="2dp"
+        app:civ_fill_color="@android:color/white" />
+
+    <TextView
+        android:id="@+id/item_out_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/item_out_icon"
+        android:text="abc"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/item_out_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/item_out_nick"
+        android:layout_below="@id/item_out_nick"
+        android:background="@drawable/msg_out_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_out_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/item_out_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

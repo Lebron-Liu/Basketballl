@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <!--缩略图-->
+    <ImageView
+        android:id="@+id/item_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ff000000"/>
+
+    <!--播放按钮-->
+    <ImageView
+        android:id="@+id/item_play_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_video_play"
+        android:layout_centerInParent="true"/>
+
+    <!--播放器-->
+
+</RelativeLayout>

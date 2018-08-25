@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="210dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.xykj.fragments.GetPictureFragment"
+    android:background="#ffffff"
+    android:padding="5dp">
+
+    <Button
+        android:id="@+id/btn_content"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="从图库获取" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

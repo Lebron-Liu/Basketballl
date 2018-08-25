@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorPrimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_usr_def"
+            app:civ_fill_color="@android:color/white" />
+
+        <TextView
+            android:id="@+id/title_center_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:id="@+id/title_center_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"></FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_article_publish" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_publish"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+   <FrameLayout
+       android:id="@+id/content"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"></FrameLayout>
+    <RadioGroup
+        android:id="@+id/group_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#666666"
+        android:orientation="horizontal">
+        <RadioButton
+            style="@style/Tab_Style"
+            android:id="@+id/tab_home"
+            android:drawableTop="@drawable/tab_home_drawable"
+            android:text="@string/home"
+            android:checked="true"/>
+        <RadioButton
+            style="@style/Tab_Style"
+            android:id="@+id/tab_found"
+            android:drawableTop="@drawable/tab_found_drawable"
+            android:text="@string/found"/>
+        <RadioButton
+            style="@style/Tab_Style"
+            android:id="@+id/tab_msg"
+            android:drawableTop="@drawable/tab_msg_drawable"
+            android:text="@string/msg"/>
+    </RadioGroup>
+
+</LinearLayout>

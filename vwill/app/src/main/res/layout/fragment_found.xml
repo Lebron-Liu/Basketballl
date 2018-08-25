@@ -1,0 +1,40 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xykj.fragments.FoundFragment"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <com.xykj.widget.AutoScrollViewPager
+                android:id="@+id/pager_ad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <!--下标指示-->
+            <LinearLayout
+                android:id="@+id/layout_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"></LinearLayout>
+        </FrameLayout>
+        <com.xykj.widget.XGridView
+            android:id="@+id/grid_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="20dp"
+            android:stretchMode="columnWidth"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+</ScrollView>
